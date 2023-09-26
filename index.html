@@ -1,6 +1,59 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foldable Sidebar Website</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+    
+            #wrapper {
+                display: flex;
+            }
+    
+            #sidebar {
+                width: 250px;
+                background-color: #333;
+                color: #fff;
+                transition: width 0.5s;
+            }
+    
+            #content {
+                flex: 1;
+                padding: 20px;
+                transition: margin-left 0.5s;
+            }
+    
+            #menu-toggle {
+                cursor: pointer;
+                padding: 10px;
+            }
+    
+            #menu-toggle:hover {
+                background-color: #555;
+            }
+    
+            /* Folded Sidebar Style */
+            #wrapper.folded #sidebar {
+                width: 50px;
+            }
+    
+            #wrapper.folded #content {
+                margin-left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div id="menu-toggle" onclick="toggleSidebar()">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I_Swords</title>
