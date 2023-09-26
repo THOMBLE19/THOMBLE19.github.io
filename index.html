@@ -54,7 +54,30 @@
         <div id="wrapper">
             <div id="sidebar">
                 <div id="menu-toggle" onclick="toggleSidebar()">
-    <meta charset="UTF-8">
+                    ☰
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Welcome to my website</h1>
+            <p>This is the content of the website.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const wrapper = document.getElementById('wrapper');
+            wrapper.classList.toggle('folded');
+        }
+    </script>
+</body>
+</html> 
+                    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I_Swords</title>
 </head>
