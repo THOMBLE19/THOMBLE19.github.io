@@ -1,5 +1,6 @@
 <head>
-<main>
+<h1>
+    <main>
         <section id="sectie1">
 
              <div class="info-box">
@@ -10,4 +11,5 @@
      </body>
         </section>
     </main>
+</h1>
 </head> 
